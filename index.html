@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Leapster 2 Emulator</title>
+<style>
+  body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  #emulator-screen {
+    border: 2px solid #fff;
+    background-color: #222;
+    margin-top: 20px;
+  }
+  #fileInput {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h1 style="color: white;">Leapster 2 Emulator</h1>
+<canvas id="emulator-screen" width="320" height="240"></canvas>
+<input type="file" id="fileInput" accept=".zip" />
+<script src="https://stuk.github.io/jszip/dist/jszip.min.js"></script>
+<script src="leapster2_emulator.js"></script>
+</body>
+</html>
